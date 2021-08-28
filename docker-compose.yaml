@@ -1,0 +1,17 @@
+version: '3'
+services:
+  client:
+    container_name: "client"
+    build:
+      context: ./client
+    networks:
+      - network
+  server:
+    container_name: "server"
+    build:
+      context: ./server
+    networks:
+      - network
+
+networks:
+  network:

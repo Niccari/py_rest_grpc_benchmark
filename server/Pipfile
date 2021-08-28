@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+grpcio = "*"
+def-proto = {path = "./def_proto-0.0.1-py3-none-any.whl"}
+fastapi = "*"
+uvicorn = "*"
+python-multipart = "*"
+
+[dev-packages]
+grpcio-tools = "*"
+autopep8 = "==1.5.5"
+hacking = "*"
+
+[requires]
+python_version = "3.9"

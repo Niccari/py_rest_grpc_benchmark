@@ -1,0 +1,6 @@
+client/mock_data/bin_1mb filter=lfs diff=lfs merge=lfs -text
+client/mock_data/bin_30mb filter=lfs diff=lfs merge=lfs -text
+client/mock_data/bin_5mb filter=lfs diff=lfs merge=lfs -text
+client/mock_data/text_1mb filter=lfs diff=lfs merge=lfs -text
+client/mock_data/text_30mb filter=lfs diff=lfs merge=lfs -text
+client/mock_data/text_5mb filter=lfs diff=lfs merge=lfs -text

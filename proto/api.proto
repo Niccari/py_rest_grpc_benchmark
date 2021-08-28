@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package niccari_test;
+
+service Api {
+    rpc GetEmpty(EmptyRequest) returns (EmptyResponse) {};
+    rpc GetContent(ContentRequest) returns (ContentResponse) {};
+
+    rpc PostEmpty(EmptyRequest) returns (EmptyResponse) {};
+    rpc PostContent(Content) returns (EmptyResponse) {};
+    rpc UploadText(stream TextRequest) returns (EmptyResponse) {};
+    rpc UploadImage(stream ImageRequest) returns (EmptyResponse) {};
+}
+
+
+message EmptyRequest {}
+
+message EmptyResponse {}
+
+message Content {
+    int64 id = 1;
+    string hoge = 2;
+}
+
+message ContentRequest {
+    int32 count = 1;
+}
+
+message ContentResponse {
+    repeated Content data = 1;
+}
+
+message TextRequest {
+    string text = 1;
+}
+
+message ImageRequest {
+    bytes image = 1;
+}
+
