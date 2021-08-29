@@ -5,11 +5,10 @@ name = "pypi"
 
 [packages]
 grpcio = "*"
-def-proto = {path = "./def_proto-0.0.1-py3-none-any.whl"}
 requests = "*"
+protobuf = "*"
 
 [dev-packages]
-grpcio-tools = "*"
 autopep8 = "==1.5.5"
 hacking = "*"
 
