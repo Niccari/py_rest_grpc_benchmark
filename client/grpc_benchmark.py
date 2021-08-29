@@ -1,8 +1,8 @@
 import grpc
 from timeit import repeat
 
-from def_proto import api_pb2
-from def_proto import api_pb2_grpc
+import api_pb2
+import api_pb2_grpc
 
 
 class GrpcBenchmark:

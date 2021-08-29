@@ -2,8 +2,8 @@ from concurrent import futures
 import grpc
 import time
 
-from def_proto import api_pb2
-from def_proto import api_pb2_grpc
+import api_pb2
+import api_pb2_grpc
 
 from random_generator import generate_id
 from random_generator import generate_string
